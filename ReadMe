@@ -2,9 +2,13 @@ UIPageViewController
 
 This project demonstrate how to create UIPageViewController class and implement UIPageViewControllerDatasource and UIPageViewControllerDelegates.
 
-An array of colours is created. A single view controller is added in storyboard.
+Create a int type and call it as 'index'.
 
-When you swipe the page view controller, a new view controller instance is created and based on index, the background color of view is updated.
+Create an array and add colours as objects.
 
-Though we are using the same view controller instance, after swiping pages left and right, we will be updating background colours of the view.
+Create a view controller in storyboard. Set restoration id for the view controller.
+
+When you swipe the page view controller, using restoration id, a new view controller instance is created.
+
+After swiping pages left and right, we will be updating background colours of the view based on the 'index' value. The colour is fetched from colour array.
 
